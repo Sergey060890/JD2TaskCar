@@ -125,6 +125,7 @@ public final class App {
                 "RED", PRICE_CAR_5);
         dao.insert(car);
         dao.insert(car1);
+        dao.insert(car3);
         dao.update(ID_FOR_UPDATE, car);
         dao.delete(ID_FOR_DELETE);
         dao.select();
