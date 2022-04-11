@@ -126,6 +126,7 @@ public final class App {
         dao.insert(car);
         dao.insert(car1);
         dao.insert(car3);
+        dao.insert(car4);
         dao.update(ID_FOR_UPDATE, car);
         dao.delete(ID_FOR_DELETE);
         dao.select();
