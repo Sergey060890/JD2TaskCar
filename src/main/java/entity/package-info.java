@@ -1,0 +1,4 @@
+/**
+ * Entity package.
+ */
+package entity;

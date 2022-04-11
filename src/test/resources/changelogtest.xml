@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="1" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <createTable tableName="cars">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="identifier" type="int"/>
+            <column name="Brand" type="varchar(30)"/>
+            <column name="Color" type="varchar(30)"/>
+            <column name="Price" type="int"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <insert tableName="cars">
+            <column name="identifier" value='17'/>
+            <column name="Brand" value="BMW"/>
+            <column name="Color" value="WHITE"/>
+            <column name="Price" value="120000"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <insert tableName="cars">
+            <column name="identifier" value='21'/>
+            <column name="Brand" value="BMW"/>
+            <column name="Color" value="BLACK"/>
+            <column name="Price" value="130000"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="4" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <insert tableName="cars">
+            <column name="identifier" value='25'/>
+            <column name="Brand" value="MERCEDES"/>
+            <column name="Color" value="BLACK"/>
+            <column name="Price" value="140000"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="5" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <insert tableName="cars">
+            <column name="identifier" value='38'/>
+            <column name="Brand" value="MERCEDES"/>
+            <column name="Color" value="RED"/>
+            <column name="Price" value="240000"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="6" author="Sergey060890" labels="example-label" context="example-context">
+        <comment>example-comment</comment>
+        <insert tableName="cars">
+            <column name="identifier" value='44'/>
+            <column name="Brand" value="MERCEDES"/>
+            <column name="Color" value="WHITE"/>
+            <column name="Price" value="170000"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
